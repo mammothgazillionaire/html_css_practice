@@ -1,0 +1,55 @@
+
+/*   TYPE SELECTORS */
+
+/*   PRECEDENCE ORDER  ID  CLASS SELECTOR 
+	 PRECEDENCE IS     0     0    1			
+*/
+
+div { 
+
+	background-color: blue; 
+	
+	}
+	
+h1 {
+	background-color: magenta;
+}
+
+p { 
+	text-align: center;
+
+	font-size:  36px;				 
+  }
+
+/*  CLASS SELECTORS */
+
+/*   PRECEDENCE ORDER  ID  CLASS SELECTOR 
+	 PRECEDENCE IS     0     1    0			
+*/
+
+.parent__cls { background-color: yellow; }
+ 
+.heading__cls { background-color: orange ;  }
+
+.child__cls { font-size: 54px; }
+
+/*  ID SELECTORS */
+
+/*   PRECEDENCE ORDER  ID  CLASS SELECTOR 
+	 PRECEDENCE IS     1     0    0			
+*/
+
+
+#heading__uid {  color: green;
+
+			font-size: 65px;
+
+			text-align: center;
+
+		  }
+
+
+#parent__uid { background-color: steelblue; }
+
+#child__uid  { background-color: lightblue;  }
+ 			

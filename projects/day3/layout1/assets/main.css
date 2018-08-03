@@ -1,0 +1,139 @@
+/* css reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* main.css starts here */
+
+.heading__one {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.sec__one {
+  width: 25%;
+  display: inline-block;
+  
+}
+
+.sec__two {
+  width: 45%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.sec__one div,
+.sec__two div {
+  width: 150px;
+  height: 100px;
+  background-color: red;
+  margin: 20px;
+}
+
+.box__one {
+   border: 5px solid black; 
+}
+
+.box__two {
+  border: 5px solid black; 
+}
+
+.box__three {
+  border: 5px dotted black;
+}
+
+.box__four {
+   visibility: hidden;
+}
+
+.box__five {
+  border: 5px dashed black;
+}
+
+.box__six {
+  border: none;
+}
+
+.contbord__box{
+  width: 47%;
+}
+
+.heading__two{
+  font-size: 26px;
+}
+
+.contbord__box .sec__three {
+  -moz-box-sizing:content-box;
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  margin: 40px 20px 50px 65px;
+  background-color: brown;
+  text-align: center;
+  padding: 20px;
+  color: blue;
+  border: 30px solid red;
+}
+
+.sec__four {
+  -moz-box-sizing:border-box;
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 30px 0px 20px 125px;
+  background-color: brown;
+  text-align: center;
+  padding: 50px;
+  color: blue;
+  border: 20px solid red;
+}
+
+.paddin {
+  background-color: green;
+  margin-top: 20px;
+}

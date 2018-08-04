@@ -50,80 +50,37 @@ table {
 
 /* style.css starts here */
 
-.main__1 {
+.main__1,
+.main__2,
+.main__3 {
+	width: 560px;
 	border: 1px solid green;
-	width: 41%;
-	height: 9.375em;
-	margin-left: 25%;
-	margin-top: 40px;
-}
+	margin: auto;
+	margin-top: 5%;
+	box-sizing: content-box;
+	}
 
-
-.main__1 .box__one,
- .main__1 .box__two,
- .main__1 .box__three {
-
- 	width: 200px;
+.box__one ,
+.box__two,
+.box__three {
+	width: 160px;
  	height: 100px;
  	background-color: lightgreen;
  	display: inline-block;
- 	margin: 20px 10px 10px 20px;
-
+ 	margin: 10px;
 }
-
-
-
-
-
-.main__2 {
-	border: 1px solid green;
-	width: 41%;
-	height: 350px;
-	margin-left: 25%;
-	margin-top: 40px;
-}
-
-
 
 .main__2 .box__one,
  .main__2 .box__two,
  .main__2 .box__three {
-
- 	width: 200px;
- 	height: 130px;
- 	background-color: lightgreen;
- 	display: inline-block;
- 	margin: 15px 10px 10px 20px;
- 	border: 7px solid black;
-
+ 	border: 10px solid black;
 }
-
-.main__2 .box__three {
-	display: block;
-}
-
-
-
-
-.main__3 {
-	border: 1px solid green;
-	width: 41%;
-	height: 150px;
-	margin-left: 25%;
-	margin-top: 40px;
-}
-
-
 
 .main__3 .box__one,
- .main__3 .box__two,
- .main__3 .box__three {
-
- 	width: 200px;
- 	height: 100px;
- 	background-color: lightgreen;
+.main__3 .box__two,
+.main__3 .box__three {
+ 	box-sizing: border-box;
  	display: inline-block;
- 	margin: 20px 10px 10px 20px;
- 	border: 7px solid black;
-
+ 	border: 10px solid black;
+ 	margin: 10px 11px 2px 12px;
 }

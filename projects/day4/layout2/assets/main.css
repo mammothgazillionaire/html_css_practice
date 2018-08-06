@@ -60,6 +60,9 @@ body{
 
 header {
   color: white;
+  position: fixed;
+  width: 100%;
+  top:0;
 }
 
 .heading{
@@ -83,6 +86,7 @@ nav a {
 article {
   width: 50%;
   margin: 0 auto;
+  padding-top:280px; 
 }
 
 

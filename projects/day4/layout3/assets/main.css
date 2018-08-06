@@ -1,4 +1,6 @@
-* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+/* css reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
 */
 
@@ -46,50 +48,76 @@ table {
   border-spacing: 0;
 }
 
+
 /* main.css */
 
 
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-.clear:before,
-.clear:after {
-  content: "";
-  display: table;
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  background-color: lightgray;
 }
-.clear:after {
-  clear: both;
-}
-.clear {
-  clear: both;
-  *zoom: 1;
+.wrapper {
+  width: 55%;
+  height: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px; 
+  font-size: 14px;
+  padding: 10px 0px 0px 10px;
 }
 
-a {
-  margin: 30px 10px;
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px 10px;
 }
 
-nav a {
-  float: left;
-  margin: 20px 10px;
-  display: block;
+section {
+  margin-top: 20px;
 }
 
-article {
-  margin: 10px;
-}
-.btn {
-  border: 1px solid black;
+.display {
+  background-color: salmon;
   display: inline-block;
+}
+
+.art__1,
+.art__2 {
+  width: 42%;
   padding: 10px;
-  margin: 20px;
+  border-radius: 10px; 
+  margin-bottom: 20px;
+
+}
+span {
+  background-color: white;
 }
 
-
-.col-1-3 {
-  width: 30%;
-  display: inline-block;
+.float {
+  background-color: springgreen;
   float: left;
+}
+
+.col--1 {
+  width: 33%; 
+}
+
+.same--width .art__1,
+.same--width .art__2 {
+  background-color: salmon;
+  width: 48%;
+  display: inline-block;
+}
+
+.floated--width .art__3,
+.floated--width .art__4 {
+  background-color: springgreen;
+  float: left;
+  width: 48%;
+  border-radius: 5px; 
+  padding: 5px;
+  margin-bottom: 10px;
 }

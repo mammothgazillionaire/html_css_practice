@@ -69,7 +69,6 @@ h1 {
 
 .box__2 {
   border: 10px solid black;
-
 }
 
 .box__3 {
@@ -79,8 +78,6 @@ h1 {
   background-color: aqua;
   border: 10px solid #bada55;
 }
-
-
 
 .text__one,
 .text__two,
@@ -102,6 +99,7 @@ h1 {
   background-color: black;
   margin-left: 10px;
 }
+
 .color__text{
   display: inline-block;
   margin-left: 10px;

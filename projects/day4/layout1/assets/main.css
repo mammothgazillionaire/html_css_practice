@@ -1,4 +1,6 @@
-* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+/* css reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
 */
 
@@ -48,48 +50,96 @@ table {
 
 /* main.css */
 
+.wrapper {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-.clear:before,
-.clear:after {
-  content: "";
-  display: table;
+.container {
+  width: 90%;
+  margin: 180px auto;
 }
-.clear:after {
-  clear: both;
+
+h1 {
+  margin: 10px auto;
+  font-size: 26px;
 }
+
+img {
+  margin: -2px 2px 2px 2px ;
+}
+
+.floated--1 {
+  float: left;
+  margin: 10px 5px;
+}
+
+.floated--2 {
+  float: right;
+}
+
+.outer__box {
+  border: 4px solid red;
+  background-color: yellowgreen; 
+  padding: 20px 40px 20px 50px;
+}
+.nester {
+  margin: 20px auto;
+}
+
+.box {
+  background-color: tan;
+}
+
+.box__6 {
+  height: 20%;
+  width: 90%;
+  overflow: auto;
+  margin-right: -10px;
+}
+
+.box__6 img {
+  
+}
+
+
+.box__9 {
+  float: left;
+}
+
+.col {
+  float: left;
+  margin: 5px 5px 10px 5px;
+  height: 60px ;
+  width: 60px;
+  background-color: pink;
+}
+
+.col--111 {
+  float: left;
+  width: 100%;
+  height: 60px;
+  margin: 10px auto;
+}
+
 .clear {
-  clear: both;
+    clear: both 
+
+}
+
+.cf {
   *zoom: 1;
 }
-
-a {
-  margin: 30px 10px;
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
 }
 
-nav a {
-  float: left;
-  margin: 20px 10px;
-  display: block;
-}
-
-article {
-  margin: 10px;
-}
-.btn {
-  border: 1px solid black;
-  display: inline-block;
-  padding: 10px;
-  margin: 20px;
-}
-
-
-.col-1-3 {
-  width: 30%;
-  display: inline-block;
-  float: left;
+hr {
+  margin: 50px auto;
+  width: 80%;
 }

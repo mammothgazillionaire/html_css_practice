@@ -46,13 +46,19 @@ table {
   border-spacing: 0;
 }
 
+strong {
+  font-weight: 400;
+}
+
+cite,em {
+  font-style: italic;
+}
+
 /* main.css */
 
 
 /*
-  ========================================
   Clearfix
-  ========================================
 */
 .clear:before,
 .clear:after {
@@ -67,29 +73,147 @@ table {
   *zoom: 1;
 }
 
-a {
-  margin: 30px 10px;
+body {
+  box-sizing: border-box;
+  color: #888;
+  font: 300 22px "Open Sans", "Helvetica Neue", Helvetica , Arial;
 }
 
-nav a {
-  float: left;
-  margin: 20px 10px;
-  display: block;
-}
+/* grid */
 
-article {
-  margin: 10px;
-}
-.btn {
-  border: 1px solid black;
-  display: inline-block;
-  padding: 10px;
-  margin: 20px;
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 
 .col-1-3 {
   width: 30%;
+  padding-left: 10px;
+  padding-right: 10px;
   display: inline-block;
-  float: left;
 }
+
+.grid {
+   margin: 0 auto;
+  width: 960px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*  btn   */
+
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+  border: 2px solid #dfe2e5;
+  padding: 10px 30px;
+}
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+
+h1, h3, h4 {
+  color: #648880;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 44px; 
+}
+
+
+h4 {
+  font-size: 18px;
+  color: #a9b2b9
+  font-weight : 400;
+}
+
+
+h5 {
+   color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+a {
+  padding:5px;
+  color:#648880; 
+}
+
+a:hover {
+  color:#a9b2b9;
+}
+
+
+
+
+.logo {
+  padding: 40px 0 22px 0;
+  border-top: 4px solid #648880;
+  margin-top: -20px;
+  margin-left: 24%;
+  line-height: 44px;
+  float: left;
+  margin-right: 1%;
+}
+a {
+  text-decoration: none; 
+}
+
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.hero {
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer {
+  padding-bottom: 44px;
+  padding-top: 44px;
+  float: left;
+  margin-left: 20%;
+  width: 58%;
+}
+
+.primary-footer {
+  color: #648880;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px; 
+  }
+
+.primary-footer-small {
+  text-align: right;
+ 
+}
+
+
+.tagline {
+  margin: 66px 0 22px 0; 
+  text-align: right;
+}
+
+p a{
+  border-bottom: 1px solid #dfe2e5;
+}
+

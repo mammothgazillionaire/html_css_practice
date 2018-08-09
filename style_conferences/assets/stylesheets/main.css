@@ -84,6 +84,12 @@ body {
   background: #293f50;
 }
 
+
+img {
+  height: 200px;
+  width: 280px;
+  border-radius: 10px;
+}
 /* grid */
 
 
@@ -172,7 +178,18 @@ a:hover {
   line-height: 44px;
   float: left;
   margin-right: 1%;
+  position: absolute;
+  top: 3.1%;
+  font-weight: 100;
+  font-size: 46px;
 }
+
+.tagline {
+  margin: 66px 0 22px 0; 
+  text-align: right;
+}
+
+
 a {
   text-decoration: none; 
 }
@@ -225,11 +242,6 @@ footer {
 }
 
 
-.tagline {
-  margin: 66px 0 22px 0; 
-  text-align: right;
-}
-
 p a{
   border-bottom: 1px solid #dfe2e5;
 }
@@ -237,15 +249,6 @@ p a{
 
 
 /*  speakers.html css style  */
-
-.floated {
-
-}
-
-
-.padded {
-
-}
 
 .hero--3 {
   line-height: 44px;
@@ -299,7 +302,9 @@ article a {
   left: 77%;
   top: 37%;
   }
-
+article .btn {
+  padding: 60px;
+}
 article h3 {
   font-size: 36px;
   font-weight: 100;
@@ -313,4 +318,103 @@ article h4 {
 ul li {
   display: inline-block;
   padding: 0px 10px;
+}
+
+.img--1 {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  float: right;
+  position: relative;
+  left:-11%;
+  margin-top: -3.3em; 
+  display: inline-block;
+  z-index: 2;
+}
+
+
+/****************venue.css****************/
+
+.wrapper {
+  background-color: white;
+}
+
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 22px;
+}
+.col-3-3 {
+  height: 264px;
+  width: 500px;
+  margin-top: 20px;
+  margin-left: -80px;
+}
+.col-4-3 {
+  text-align: center;
+}
+
+.col-4-3 h2 {
+  text-align: left;
+}
+.vertical {
+  vertical-align: top;
+  font-weight: 100;
+}
+
+
+
+/**************register.html****************/
+
+
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px;
+}
+
+form {
+  margin-bottom: 22px;
+}
+input,
+select,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.register-group label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+}
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+.register-group textarea {
+  height: 78px;
+}
+
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding:15px 60px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #77a198;
 }

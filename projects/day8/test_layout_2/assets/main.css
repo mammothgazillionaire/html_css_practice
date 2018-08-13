@@ -1,0 +1,419 @@
+* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+strong {
+  font-weight: 400;
+}
+
+cite,em {
+  font-style: italic;
+}
+
+
+/***********clearfix**************/
+
+.clear:after,
+.clear:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*************main.css***********/
+
+*,body,html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/***********header**************/
+
+.container {
+    max-width: 1600px;
+    height: 95%;
+    width: 100%;
+    background-color: #e9ebee;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4267b2;
+    height: 6%;
+}
+
+header nav {
+    padding: 10px;
+}
+
+ nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/*********left tab*********/
+
+.left-tab {
+    margin-left: 7em;
+    width: 50%;
+}
+
+.color-fb {
+    vertical-align: center;
+    color: white;
+    font-size: 2.1em;
+    vertical-align: -28%;
+}
+
+input[type=search] {
+    padding: 3px;
+    width: 600px;
+    height: 56%;
+}
+
+
+a {
+    text-decoration:none;
+    color: black;
+}
+
+
+.magnifier {
+    margin-left: -26px;
+    color: black;
+}
+
+/***right tab*/
+
+.right-tab {
+    float: right;
+    margin-right: 5%;
+    margin-top: -32px;
+}
+
+.right-tab li img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: -5px;
+}
+
+.icon {
+    font-size: 1.7em;
+    vertical-align: top;
+    margin-top: 4px;
+}
+
+.frnd--logo {
+    padding-left: .7em;
+    border-left: 1px solid black;
+    margin-left: 1.1em;
+}
+
+.notf--ques {
+    margin-left: 1.1em;
+    padding-left: .7em;
+    border-left: 1px solid black;
+}
+
+.hm--txt {
+ font-weight: 800;
+ vertical-align: top;
+ margin-top: .6em;
+} 
+
+.hm--txt a {
+    color: white;
+}
+
+/*********************main*************************/
+
+.wrapper {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.col-1-4{
+    width: 23%;
+    margin: 0% 1%;
+}
+
+.col-2-4{
+    width: 47.7%;
+    margin: 0px 2%;
+}
+
+.sec {
+    display: inline-block;
+}
+
+/***********section left**********/
+.sec__left {
+    position: relative;
+    bottom: 90;
+}
+
+.img--side {
+    font-weight: bold;
+}
+
+
+.sec__left img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 21px;
+    right: 15px;
+}
+
+.sec__left li{
+    margin: 1em 0px;
+}
+
+.sec__left a{
+    padding-right:10px;
+}
+
+.list--4 li{
+    display: inline-block;
+}
+
+h3 {
+    color: gray;
+}
+.sec__left .img--sidespan {
+    margin-left: 5px;
+    vertical-align: 40%;
+}
+
+/***********section center**********/
+
+
+.sec__center {
+    transform: translate(-22%,18%);    
+}
+
+.nav__center{
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.nav__center li {
+    padding: 10px;
+}
+
+.nav__center span{
+    margin-left: 5px;
+}
+
+section img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transform: translate(40%,100%); 
+    position:fixed;
+    z-index: 2;
+}
+
+.nav__center--top {
+    background-color: whitesmoke;
+    padding:4px;
+}
+
+.brdr{
+    border-left: 1px solid rgb(207, 207, 207);
+}
+
+textarea {
+    padding: 30px 0px;
+}
+
+.nav__center--btm {
+ background-color: white;
+ padding: 8px;
+}
+
+.nav__center--btm li {
+    background-color: rgb(230, 230, 230);
+    border-radius: 18px;
+}
+
+.sec__center--2 {
+    margin-top: -3%; 
+}
+
+.sec__center--2 article {
+    height: 47%;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.wrap--4 {
+    position: relative;
+    top: .4em;
+    left: 5em;
+}
+
+.wrap--4 img{
+    position: absolute;
+    bottom: 2.7em;
+    left: -4.5em;
+}
+
+.wrap--4 span{
+ margin: 0px 5px;
+}
+
+.dots {
+    float: right;
+    position: relative;
+    right: 3em;
+}
+
+h2 {
+    color: rgb(177, 136, 214);
+}
+
+h2 .lorem {
+    vertical-align: 13%;
+}
+
+h2 .dolor {
+    vertical-align: 6%;
+}
+
+h4 span {
+    font-weight: 100;
+    color: gray;
+}
+.line--1,
+.para--1 {
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.para--1 span {
+    color: rgb(175, 124, 223);
+    font-weight: bold;
+}
+
+.wrap--5 {
+ margin-top: 3em;
+}
+
+.wrap--6 {
+    margin-top: 1.2em;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    padding: 12px 0px;
+}
+.wrap--6 li{
+    display: inline-block;
+    color: gray;
+    margin-top: .1em;
+    font-size: 1.3em;
+    padding: 0px 5em;
+}
+
+.wrap--6 span {
+ margin-left: .5em;
+}
+
+.wrap--7 img {
+    height: 36px;
+    width: 36px;
+    position: relative;
+    top: -1.4em;
+} 
+.wrap--7 li {
+    display: inline-block;
+}
+
+input[type=text] {
+    margin-top: 10px; 
+    width: 550px;
+    height: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    position: relative;
+    left: 1.2em;
+    font-size: 1em;
+    background-color: rgb(230, 225, 225);
+}
+
+.floated--icons {
+    position: absolute;
+    left: 75%;
+    bottom: 7%;
+}
+
+.floated--icons li {
+    padding: 0px 4px;
+    font-size: 1.35em;
+}
+
+/***********section right**********/
+
+.sec__right {
+    background-color:white;
+
+}
+
+.sec__right--1 {
+    height: 00px;
+}

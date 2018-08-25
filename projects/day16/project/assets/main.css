@@ -1,0 +1,280 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/***********main.css**************/
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: grey;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 3rem;
+    color: black;
+    font-weight: 100;
+    line-height: 1;
+    padding: 2rem 0;
+}
+h4 {
+    color: orange;
+    padding: 1rem 0;
+}
+h5{
+    font-size: 1.4rem;
+}
+.container{
+    max-width: 1860px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/***********HEADER************/
+
+.home--left{
+    background: url(../assets/media/home-img.jpg) no-repeat 30%;
+    height: 90vh;
+    display: flex;   
+    transform: scale(1);
+    transition: all .8s ease;
+}
+.home--left:hover {
+    transform: scale(1.03);
+}
+.logo {
+    position: relative;
+    top: 5%;
+    left: 15%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+}
+.home--right{
+    height: 90vh;
+    background-color: rgba(217, 238, 176, 0.7);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+nav li {
+    padding: 1.2rem;
+}
+.highlighted {
+    color: green;
+}
+a:hover {
+    color: green;
+}
+span {
+    font-weight: bold;
+}
+.content{
+    color: grey;
+    display: grid;
+    height: 40vh;
+    text-align: left;
+    align-content: end;
+    padding: 3rem;
+    line-height: 2;
+    margin: 12rem 0;
+}
+ 
+.btn {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: .5rem;
+    width: 20%;
+    text-align: center;
+    color: black;
+    margin-top: 2rem;
+}
+.btn:hover{
+    color: grey;
+    border-color: gray;
+}
+
+/***********ABOUT************/
+.about{
+    display: grid;
+    text-align: left;
+    padding:0rem 0.009rem;
+}
+.about--left{
+    padding: 2rem;
+}
+.about p {
+    margin-top: 1rem;
+    line-height: 1.5;
+    color: gray;
+    padding: 1rem 1rem 0rem 0rem;
+    font-size: 1.1rem;
+}
+ .img {
+    background: url(../assets/media/about-img.jpg) no-repeat top;
+    height: 40vh;
+    transition: all .7s ease;
+}
+.img:hover{
+    transform: scale(1.04);
+    box-shadow: 1px 1px 1px black;
+}
+.skills{
+    padding-left: 4rem;
+    background: rgb(240, 181, 72);
+    height: 40vh;
+    width: 100%;
+}
+.skills h3,
+.skills h4 {
+    color: white;
+}
+.skills p {
+    padding-bottom: 1rem; 
+    font-weight: bold;
+    color: black;
+}
+progress[value] {
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 20px; 
+    width: 250px;
+    height: 5px;
+ }
+progress[value]::-webkit-progress-value {
+    background: red; 
+}
+p[data-value]:after {
+   content: attr(data-value);
+   text-align: right;
+   position: relative;
+   left:14%;
+}
+
+.about__btm {
+    height: 40vh;
+    padding: 0rem;
+    color: white;
+}
+.about__btm p {
+    color: white;
+}
+.design,
+.strategy,
+.app,
+.code{
+    height: 40vh;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.design{
+    background: rgb(240, 181, 72);
+}
+.strategy{
+    background: rgb(218, 105, 71);
+}
+.app{
+    background: black;
+}
+.code p {
+    color: gray;
+}
+.code h5 {
+    color: black;
+}
+.code i {
+    color: black;
+    font-size: 3.2rem;
+}
+i{
+    padding: 2rem 2rem 2rem 0;
+    font-size: 2.5rem;
+}
+
+/************Experiences***************/
+
+.exp--left {
+    background: url(../assets/media/experience-img.jpg) no-repeat top left;
+    height: 40vh;
+    transition: all .7s ease;
+}
+.exp--left:hover{
+    transform: scale(1.03);
+}
+.exp--right{
+    height: 40vh;
+    background: rgb(218, 105, 71);
+    color: white;
+    text-align: left;
+    padding-left: 5rem;
+}
+.exp__right--top h4 {
+    color: white;
+}
+.exp__right--top,
+.exp__right--bottom {
+    color: white;
+}
+.exp__right--bottom span{
+    color: black;
+    padding: 1rem;
+} 

@@ -84,6 +84,7 @@ h5{
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    display: grid;
 }
 
 /***********HEADER************/
@@ -142,7 +143,7 @@ span {
     border: 2px solid black;
     border-radius: 25px;
     padding: .5rem;
-    width: 20%;
+    width: 13rem;
     text-align: center;
     color: black;
     margin-top: 2rem;
@@ -196,8 +197,8 @@ progress[value] {
     appearance: none;
     border: 1px solid black;
     border-radius: 20px; 
-    width: 250px;
-    height: 5px;
+    width: 70%;
+    height: .3rem;
  }
 progress[value]::-webkit-progress-value {
     background: red; 
@@ -246,7 +247,7 @@ p[data-value]:after {
     font-size: 3.2rem;
 }
 i{
-    padding: 2rem 2rem 2rem 0;
+    padding: 2.2rem;
     font-size: 2.5rem;
 }
 
@@ -267,14 +268,174 @@ i{
     text-align: left;
     padding-left: 5rem;
 }
-.exp__right--top h4 {
+.exp__right--top h4 ,
+.test--left h4{
     color: white;
+}
+.exp--right i,
+.test--left i {
+    padding-left: 0rem;
 }
 .exp__right--top,
-.exp__right--bottom {
+.exp__right--bottom,
+.test--left {
     color: white;
 }
-.exp__right--bottom span{
-    color: black;
+.exp__right--bottom span,
+.test--left span{
+    color: rgb(34, 33, 33);
     padding: 1rem;
 } 
+
+.exp__right--top h3,
+.test--left h3{
+    color: white;
+}
+
+/**********Testimonail***************/
+
+.test--left{
+    height: 50vh;
+    background: rgb(240, 187, 89); 
+    text-align: left;
+    padding: 3rem 5rem;
+    color:white;
+}
+.test--right{
+    height: 50vh;
+    background: url(../assets/media/education-img.jpg) no-repeat center;
+    transition: all .7s ease;
+}
+.test--right:hover{
+    transform: scale(1.03);
+}
+
+/********CONTACT***********/
+
+.contact--left,
+.contact--right{
+    height: 60vh;
+}
+.contact--left{
+    background-color: rgb(228, 111, 76);
+    padding: 2rem 0rem;
+    color: white;
+}
+.contact--left h3{
+    color: white;
+}
+button{
+    border: none;
+    background: white;
+    border-radius: 25px;
+    padding: 1.1rem 8rem;
+    box-shadow: -1px -1px -5px rgb(61, 61, 61);
+    transform: translateX(-90%);
+}
+button a {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+button:hover{
+    color: black;
+    background: none;
+    border: 2px solid black;
+}
+
+.contact__img {
+    background: url(../assets/media/contact-img.jpg) no-repeat 50% 30%;
+    height: 60vh;
+    transition: all .7s ease;
+}
+
+.contact__img:hover{
+    transform: scale(1.03);
+}
+.contact_left--top{
+    transform: translate(11%);
+    text-align: left;
+}
+.contact_left--bottom{
+    display: flex;
+    justify-content:center;
+}
+input{
+    display: flex;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width: 40vw;
+    background: none;
+    margin: 3rem;
+    text-align: left;
+    border-bottom: 1px solid orange; 
+    font-size: 1.2rem;
+    color: white;
+}
+.major{
+    padding-bottom: 5rem;
+}
+.contact--info {
+    background: rgb(34, 33, 33);
+    height: 60vh;
+    text-align: left;
+    padding: 2vw;
+}
+.contact--bottom{
+    background: rgb(228, 111, 76);
+}
+.info--top{
+    color: gray;
+    font-size: 1.2rem;
+}
+.info--top h3,
+.info--bottom h3{
+    color: white;
+    font-size: 2rem;
+}
+.info--bottom{
+    padding-top: 2rem;
+}
+.info--bottom li{
+    padding: 1rem;
+    color: gray;
+    font-size: 1.2rem;
+}
+.info--bottom a {
+    color: brown;
+}
+.info--bottom i {
+    font-size: 1.2rem;
+    padding: 0rem;
+}
+.fa-phone{
+    transform: rotateY(180deg);
+}
+iframe{
+    padding: 3rem;
+    width: 70vw;
+}
+
+/**************FOOTER***************/
+footer{
+    height: 50vh;
+    display: grid;
+    align-content: center;
+    word-spacing: .2rem;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+footer span {
+    font-weight: 100;
+    border-left: 1px solid black;
+    padding-left: 7px;
+}
+footer i {
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width: 1400px){
+
+}

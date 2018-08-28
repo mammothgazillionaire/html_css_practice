@@ -94,11 +94,11 @@ h5{
     height: 90vh;
     display: flex;   
     transform: scale(1);
-    transition: all .8s ease;
+    /* transition: all .8s ease; */
 }
-.home--left:hover {
+/* .home--left:hover {
     transform: scale(1.03);
-}
+} */
 .logo {
     position: relative;
     top: 5%;
@@ -125,6 +125,11 @@ nav li {
 a:hover {
     color: green;
 }
+nav label,
+#toggle{
+    display: none;
+}
+
 span {
     font-weight: bold;
 }
@@ -172,12 +177,12 @@ span {
  .img {
     background: url(../assets/media/about-img.jpg) no-repeat top;
     height: 40vh;
-    transition: all .7s ease;
+    /* transition: all .7s ease; */
 }
-.img:hover{
+/* .img:hover{
     transform: scale(1.04);
     box-shadow: 1px 1px 1px black;
-}
+} */
 .skills{
     padding-left: 4rem;
     background: rgb(240, 181, 72);
@@ -345,12 +350,12 @@ button:hover{
 .contact__img {
     background: url(../assets/media/contact-img.jpg) no-repeat 50% 30%;
     height: 60vh;
-    transition: all .7s ease;
+    /* transition: all .7s ease; */
 }
 
-.contact__img:hover{
+/* .contact__img:hover{
     transform: scale(1.03);
-}
+} */
 .contact_left--top{
     transform: translate(11%);
     text-align: left;
@@ -436,6 +441,37 @@ footer i {
     font-size: 1.7rem;
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1050px){
+    .contact--bottom{
+        height: 50vh;
+    }
+    nav label{
+    display: block;
+    padding: 0;
+    margin:0;
+    font-size: 2rem;
+}
+    label{
+        float: right;
+    }
+    nav{
+        position: fixed;
+        left:30%;
+        top:4%;
+        width: 50%;
+    }
+    nav ul {
+        display: none;
+    }
+    nav li {
+        border-bottom: 1px solid gray;
+        background: rgba(87, 86, 86, 1);
+    }
+    nav a{
+        color: white;
+    }
 
+    #toggle:checked + ul {
+        display: block;
+    }
 }

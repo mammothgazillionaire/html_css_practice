@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**********FONTS************/
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/**********MAIN.CSS***********/
+
+.container{
+	max-width: 1300px;
+	width: 100%;
+	margin:0 auto;
+	text-align:center;
+}
+h1,h2,h3,h4,p{
+	font-family: 'Ubuntu', sans-serif;
+}
+h1{
+	font-size: 3rem;
+	font-family: ubuntu;
+}
+h2{
+	font-size: 2.4rem;
+	font-family: ubuntu;
+	font-weight: bold;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+
+ /*********HEADER***********/
+
+ .header{
+	 display: grid;
+	 background: #003368;
+	 height: 15vmax;
+	 padding:3rem 0rem;
+	 clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 100%, 68% 88%, 36% 76%, 0 64%, 0 0);
+ }
+ .container {
+	display: grid;
+}
+
+.heading__top{
+	 color:white;
+ }
+.list__top {
+	 display: flex;
+	 align-content: center;
+ }
+ .list__top li {
+	margin: 0 auto;
+ }
+.list__top a {
+	 text-decoration: none;
+	 color: white;
+	 font-size: 1.2rem;
+	 font-weight: bold;
+	 font-family: 'Ubuntu', sans-serif;
+ }
+
+/********ABOUT***********/
+
+.about__author {
+	display: grid;
+	justify-content: center;
+}
+
+.element__top {
+	position: relative;
+}
+
+.element__top--img{
+	background: white;
+	height: 7rem;
+	position: absolute;
+	top: 24%;
+	left:46%;
+	border: 5px solid #003368;
+	border-radius: 50%;
+ }
+
+ .element__top--1{
+	 padding-top: 2rem;
+	 text-align: center;
+ }
+ .content--para {
+	 margin-top: 2rem;
+	 letter-spacing: .09rem;
+	 font-size: 1.4rem;
+	 margin-bottom: 4rem;
+ }
+ 
+ .skills {
+	 background:#002852;
+	 max-height: 20vmax;
+	 padding: 2rem;
+	 margin-top: 3rem;
+ }
+.skills__heading--1 {
+	color: #fff;
+	font-weight: bold;
+	font-size: 2.4rem;
+}
+.skills__list {
+	display: flex;
+	justify-content: center;
+}
+
+.skills__img{
+	height: 12vh;
+	margin: 2rem;
+}

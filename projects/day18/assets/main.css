@@ -90,7 +90,8 @@ h2 {
 
 .skills__heading--1,
 .tools__heading--1,
-.projects__heading--1 {
+.projects__heading--1,
+.details__heading--1 {
 	color: #fff;
 	font-weight: bold;
 	font-size: 2.4rem;
@@ -100,7 +101,8 @@ h2 {
 
 .skills__heading--1:after,
 .tools__heading--1:after,
-.projects__heading--1:after {
+.projects__heading--1:after,
+.details__heading--1:after {
 	content: " ";
 	display: block;
 	background:#ffc900;
@@ -143,6 +145,11 @@ h2 {
 
 /********ABOUT***********/
 
+.about {
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .about__author {
 	display: grid;
 	justify-content: center;
@@ -165,6 +172,7 @@ h2 {
 
  .element__top--1 {
 	 padding-top: 3rem;
+	 margin-top: 2rem;
 	 text-align: center;
  }
 
@@ -173,7 +181,13 @@ h2 {
 	 letter-spacing: .09rem;
 	 font-size: 1.4rem;
 	 margin-bottom: 4rem;
+ 
  }
+
+.about-content,
+.about-para {
+	color: white;
+}
 
 .break {
 	font-size: 2.2rem;
@@ -186,6 +200,7 @@ h2 {
 	clip-path: polygon(34% 12%, 72% 22%, 100% 30%, 100% 93%, 60% 84%, 22% 75%, 0 69%, 0 3%);
 	height: 26vmax;
 	padding: 2rem;
+	margin-top: 2rem;
  }
  .skills .container {
 	display: grid; 
@@ -205,7 +220,7 @@ h2 {
 
 .skills__img,
 .tools__img {
-	height: 13vh;
+	height: 8vh;
 	margin: 2.5rem 1.5rem ;
 }
 
@@ -292,4 +307,34 @@ h2 {
 	transform: scale(1.11);
 	filter: blur(0px);
 	box-shadow: 3px 2px 25px rgba(0, 0, 0, 0.493),-3px -2px 25px rgba(0, 0, 0, 0.493) ;
+}
+
+/****about.html*********/
+
+.details{
+	height: 30vmax;
+}
+
+
+.details__heading--1{
+	color:#222;
+}
+
+.details-info {
+	display: grid;
+	grid-template-columns: repeat(2, 300px);
+	justify-content: center;
+	align-items: center;
+	margin-top: 4rem;
+}
+.info-img{
+	height: 30vh;
+	width: 20vh;
+	border-radius: 2px;
+}
+
+.info-text {
+	font-size: 1.3rem;
+	text-align: left;
+	line-height: 1.2;
 }

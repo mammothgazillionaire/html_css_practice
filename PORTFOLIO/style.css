@@ -1,27 +1,23 @@
-// font-family: 'Encode Sans Condensed', sans-serif;
-
-
-html{
-    font-family: sans-serif;
+html {
+  font-family: sans-serif;
 }
 
-.wrapper{
+.wrapper {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-
-.header{
-  background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(web.jpeg) center;
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(web.jpeg) center;
   height: 52.92vmax;
   color: white;
-  font-family: 'Encode Sans Condensed', sans-serif;
+  font-family: "Encode Sans Condensed", sans-serif;
   position: relative;
 }
 
-.navigation-top{
+.navigation-top {
   padding-top: 2rem;
 }
 
@@ -32,133 +28,129 @@ html{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,.93);
+  background-color: rgba(0, 0, 0, 0.93);
   overflow: hidden;
   transition: 0.5s;
   padding-top: 60px;
   text-align: center;
-
-  .nav__anchors {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    margin: 1rem 0rem;
-  
-    &:hover {
-      color: #f1f1f1;
-    } 
-  }
+}
+.sidenav .nav__anchors {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin: 1rem 0rem;
+}
+.sidenav .nav__anchors:hover {
+  color: #f1f1f1;
 }
 
-.toggler{
+.toggler {
   font-size: 2rem;
-  cursor:pointer;
+  cursor: pointer;
   margin: 1.5rem;
   position: absolute;
-  left:0;
-  top:0;
-
-  &:hover{
-    color: blueviolet;
-  }
+  left: 0;
+  top: 0;
+}
+.toggler:hover {
+  color: blueviolet;
 }
 
-.about{
+.about {
   position: absolute;
   top: 25%;
 }
 
-.heading-1{
+.heading-1 {
   margin: 1rem 0rem;
   padding: 1rem 0rem;
   font-size: 2.6rem;
 }
-.heading-2{
+
+.heading-2 {
   margin-top: 2rem;
   font-size: 2.2rem;
   letter-spacing: 3px;
 }
 
-.arrow{
+.arrow {
   margin-top: 19%;
 }
+
 .fa-arrow-down {
   text-align: center;
   color: white;
   text-decoration: none;
 }
+
 .bounce {
   animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
-  0%{
+  0% {
     transform: translateY(0);
   }
-  20%{
+  20% {
     transform: translateY(0);
   }
-
   40% {
     transform: translateY(-30px);
   }
-
-  50%{
+  50% {
     transform: translateY(0);
   }
-
   60% {
     transform: translateY(-15px);
   }
-
-  80%{
+  80% {
     transform: translateY(0);
   }
-
   100% {
     transform: translateY(0);
   }
-
 }
-.social__navs{
+.social__navs {
   position: absolute;
   left: 96%;
   top: 28%;
 }
-.social__listitems a{
+
+.social__listitems a {
   color: white;
   font-size: 1.5rem;
-
-  &:hover{
-    color: blueviolet;
-  }
-
+}
+.social__listitems a:hover {
+  color: blueviolet;
 }
 
-.social__navs{
- border-radius: 35px;
- padding: 1rem 0rem;
- height: 34vh;
- background: rgba(30,30,110,.7);
+.social__navs {
+  border-radius: 35px;
+  padding: 1rem 0rem;
+  height: 34vh;
+  background: rgba(30, 30, 110, 0.7);
 }
 
-.social__listitems i{
-  padding: 1.3rem .8rem;
+.social__listitems i {
+  padding: 1.3rem 0.8rem;
 }
-.user_image{
-  margin: 0 ;
+
+.user_image {
+  margin: 0;
   padding: 0;
   width: 100%;
   height: auto;
 }
 
-.image{
-  width:  8%;
+.image {
+  width: 8%;
   height: 14%;
   border: 6px solid white;
   border-radius: 50%;
-  background: rgba(255,255,255,.7);
+  background: rgba(255, 255, 255, 0.7);
 }
+
+/*# sourceMappingURL=style.css.map */
